@@ -33,7 +33,7 @@ app.post('/users', (req, res) => {
 
   users.push(newUser);
 
-  return res.status(201).send(newUser);
+  return res.status(StatusCodes.CREATED).send(newUser);
 });
 
 app.put('/users/:userId', (req, res) => {
